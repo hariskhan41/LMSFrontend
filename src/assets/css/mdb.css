@@ -5335,12 +5335,12 @@ button:focus {
     box-shadow: none !important; }
 
 .btn-primary {
-  background-color: #4285F4 !important;
-  color: #fff !important; }
+  background-color: #3f729b!important;
+  color: #3f729b !important; }
   .btn-primary:hover {
-    background-color: #5a95f5; }
+    background-color:#3f729b; }
   .btn-primary:focus, .btn-primary:active, .btn-primary.active {
-    background-color: #0d5fe6; }
+    background-color: #3f729b; }
   .btn-primary.dropdown-toggle {
     background-color: #4285F4 !important; }
     .btn-primary.dropdown-toggle:hover, .btn-primary.dropdown-toggle:focus {
