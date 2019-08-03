@@ -1,7 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule,CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
 
-import { AppRoutingModule } from './app-routing.module';
+import { AppRoutingModule, routingComponents } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './header/header.component';
 import { MDBBootstrapModule } from 'angular-bootstrap-md';
@@ -13,11 +13,11 @@ import {MatSidenavModule} from '@angular/material/sidenav';
 import {MatIconModule} from '@angular/material/icon';
 import {MatListModule} from '@angular/material/list';
 import {FooterComponent } from './footer/footer.component';
-import {SignUpComponent } from './sign-up/sign-up.component';
-import { RegistrationFormComponent } from './registration-form/registration-form.component';
+
 import {MatFormFieldModule} from '@angular/material/form-field';
 import {MatSelectModule} from '@angular/material/select';
-import { MainPageComponent } from './main-page/main-page.component';
+
+
 
 @NgModule({
   declarations: [
@@ -25,9 +25,9 @@ import { MainPageComponent } from './main-page/main-page.component';
     HeaderComponent,
     
     FooterComponent,
-    SignUpComponent,
-    RegistrationFormComponent,
-    MainPageComponent
+    routingComponents,
+    
+    
   ],
   imports: [
     BrowserAnimationsModule,
