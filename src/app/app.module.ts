@@ -17,6 +17,7 @@ import {SignUpComponent } from './sign-up/sign-up.component';
 import { RegistrationFormComponent } from './registration-form/registration-form.component';
 import {MatFormFieldModule} from '@angular/material/form-field';
 import {MatSelectModule} from '@angular/material/select';
+import { MainPageComponent } from './main-page/main-page.component';
 
 @NgModule({
   declarations: [
@@ -25,7 +26,8 @@ import {MatSelectModule} from '@angular/material/select';
     
     FooterComponent,
     SignUpComponent,
-    RegistrationFormComponent
+    RegistrationFormComponent,
+    MainPageComponent
   ],
   imports: [
     BrowserAnimationsModule,
