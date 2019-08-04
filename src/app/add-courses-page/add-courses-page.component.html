@@ -1,0 +1,89 @@
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+<body class="hm-gradient center ">
+
+    <main>
+
+        <!--MDB Forms-->
+        <div class="container">
+            <!-- Grid row -->
+            <div class="row">
+                <!-- Grid column -->
+                <div class="col-md-6">
+                    <div class="card">
+                        <div class="card-body">
+                            <h3 class="text-center default-text py-3"><i class="fa fa-book"></i> Add Course </h3>
+                            <!--Body-->
+                            <div class="md-form">
+                                <input type="text" id="defaultForm-email" class="form-control">
+                                <label for="defaultForm-email">Course Name</label>
+                            </div>
+                            <div class="md-form">
+                                <input type="password" id="defaultForm-pass" class="form-control">
+                                <label for="defaultForm-pass">Details</label>
+                            </div>
+
+                            <!-- <div class="md-form">
+                                
+                                <input type="password" id="defaultForm-pass" class="form-control">
+                                <label for="defaultForm-pass">Details</label>
+                            </div> -->
+                            <div class="md-form">
+
+                                <div ng-app="MyApp" ng-controller="AppCtrl" layout-margin layout-padding>
+
+                                    <choose-file layout="row" flex="20">
+                                        <input id="fileInput" type="file" class="ng-hide">
+                                        <md-input-container flex class="md-block">
+                                            <input type="text" ng-model="fileName" disabled>
+                                            <div class="hint">Title Image For Course</div>
+                                        </md-input-container>
+                                        <div>
+                                            <md-button id="uploadButton" class="md-fab md-mini">
+                                                <md-icon class="material-icons">attach_file</md-icon>
+                                            </md-button>
+                                        </div>
+                                    </choose-file>
+
+                                </div>
+                            </div>
+
+
+                            <div class="text-center">
+                                <button mdbBtn type="button" color="default" mdbWavesEffect>Save</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+
+
+<script src="//ajax.googleapis.com/ajax/libs/angular_material/0.7.1/angular-material.min.js"></script>
+<script>
+    angular.module('MyApp', ['ngAria', 'ngMaterial'])
+        .controller('AppCtrl', function ($scope) { })
+        .directive('chooseFile', function () {
+            return {
+                link: function (scope, elem, attrs) {
+                    var button = elem.find('button');
+                    var input = angular.element(elem[0].querySelector('input#fileInput'));
+                    button.bind('click', function () {
+                        input[0].click();
+                    });
+                    input.bind('change', function (e) {
+                        scope.$apply(function () {
+                            var files = e.target.files;
+                            if (files[0]) {
+                                scope.fileName = files[0].name;
+                            } else {
+                                scope.fileName = null;
+                            }
+                        });
+                    });
+                }
+            };
+        });
+</script>

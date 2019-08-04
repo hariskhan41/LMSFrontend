@@ -13,9 +13,13 @@ import {MatSidenavModule} from '@angular/material/sidenav';
 import {MatIconModule} from '@angular/material/icon';
 import {MatListModule} from '@angular/material/list';
 import {FooterComponent } from './footer/footer.component';
+import {MatInputModule} from '@angular/material/input';
 
 import {MatFormFieldModule} from '@angular/material/form-field';
 import {MatSelectModule} from '@angular/material/select';
+import { NgMatSearchBarModule } from 'ng-mat-search-bar';
+
+
 
 
 
@@ -25,7 +29,7 @@ import {MatSelectModule} from '@angular/material/select';
     HeaderComponent,
     
     FooterComponent,
-    routingComponents,
+    routingComponents
     
     
   ],
@@ -41,7 +45,9 @@ import {MatSelectModule} from '@angular/material/select';
     BrowserModule,
     AppRoutingModule,
     MatFormFieldModule,
-    MatSelectModule
+    MatSelectModule,
+    NgMatSearchBarModule,
+    MatInputModule
   ],
   
   providers: [],
