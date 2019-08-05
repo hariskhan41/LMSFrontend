@@ -22,6 +22,7 @@ import { CourseDashboardComponent } from './course-dashboard/course-dashboard.co
 import {ReactiveFormsModule,FormsModule} from '@angular/forms';
 import { UploadNotesComponent } from './upload-notes/upload-notes.component';
 import { AllCoursePageComponent } from './all-course-page/all-course-page.component';
+import { StudentsDetailsComponent } from './students-details/students-details.component';
 
 
 
@@ -39,7 +40,8 @@ import { AllCoursePageComponent } from './all-course-page/all-course-page.compon
     routingComponents,
     CourseDashboardComponent,
     UploadNotesComponent,
-    AllCoursePageComponent
+    AllCoursePageComponent,
+    StudentsDetailsComponent
     
     
   ],
