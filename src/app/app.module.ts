@@ -27,10 +27,6 @@ import { StudentsDetailsComponent } from './students-details/students-details.co
 
 
 
-
-
-
-
 @NgModule({
   declarations: [
     AppComponent,

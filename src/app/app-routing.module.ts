@@ -8,6 +8,8 @@ import { AddCoursesPageComponent } from './add-courses-page/add-courses-page.com
 import { LectureDetailsPageComponent } from './lecture-details-page/lecture-details-page.component';
 import { NotesPageComponent } from './notes-page/notes-page.component';
 import { CourseAssignmentPageComponent } from './course-assignment-page/course-assignment-page.component';
+import { UploadAssignmentComponent } from './upload-assignment/upload-assignment.component';
+import { AllClassesPageComponent } from './all-classes-page/all-classes-page.component';
 
 const routes: Routes = [
   { path: '', component:MainPageComponent },
@@ -17,7 +19,9 @@ const routes: Routes = [
   { path: 'AddNewCourse', component: AddCoursesPageComponent },
   { path: 'LectureDetails', component: LectureDetailsPageComponent },
   { path: 'Notes', component: NotesPageComponent },
-  { path: 'Assignments', component: CourseAssignmentPageComponent }
+  { path: 'Assignments', component: CourseAssignmentPageComponent },
+  { path: 'AddAssignment', component: UploadAssignmentComponent },
+  { path: 'Classes', component: AllClassesPageComponent }
 ];
 
 @NgModule({
@@ -33,5 +37,7 @@ export const routingComponents = [
   AddCoursesPageComponent,
   LectureDetailsPageComponent,
   NotesPageComponent,
-  CourseAssignmentPageComponent
+  CourseAssignmentPageComponent,
+  UploadAssignmentComponent,
+  AllClassesPageComponent
 ]
