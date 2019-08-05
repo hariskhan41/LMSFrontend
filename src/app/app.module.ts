@@ -29,6 +29,7 @@ import { AllCoursePageComponent } from './all-course-page/all-course-page.compon
 
 
 
+
 @NgModule({
   declarations: [
     AppComponent,
