@@ -1,4 +1,7 @@
 import { Component, OnInit } from '@angular/core';
+import { EventEmitter } from '@angular/core';
+// import { UploadFile, UploadInput, UploadOutput } from 'ng-uikit';
+// import { humanizeBytes } from 'ng-uikit-pro-standard';
 
 @Component({
   selector: 'app-upload-notes',
@@ -7,9 +10,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class UploadNotesComponent implements OnInit {
 
-  constructor() { }
+  
 
+  constructor() {
+  }
   ngOnInit() {
   }
 
 }
+
