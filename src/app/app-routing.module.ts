@@ -6,6 +6,7 @@ import { RegistrationFormComponent } from './registration-form/registration-form
 import { CourseContentPageComponent } from './course-content-page/course-content-page.component';
 import { AddCoursesPageComponent } from './add-courses-page/add-courses-page.component';
 import { LectureDetailsPageComponent } from './lecture-details-page/lecture-details-page.component';
+import { NotesPageComponent } from './notes-page/notes-page.component';
 
 const routes: Routes = [
   { path: '', component:MainPageComponent },
@@ -13,7 +14,8 @@ const routes: Routes = [
   { path: 'SignIn', component: SignUpComponent },
   { path: 'Courses', component: CourseContentPageComponent },
   { path: 'AddNewCourse', component: AddCoursesPageComponent },
-  { path: 'LectureDetails', component: LectureDetailsPageComponent }
+  { path: 'LectureDetails', component: LectureDetailsPageComponent },
+  { path: 'Notes', component: NotesPageComponent }
 ];
 
 @NgModule({
@@ -27,5 +29,6 @@ export const routingComponents = [
   SignUpComponent,
   CourseContentPageComponent,
   AddCoursesPageComponent,
-  LectureDetailsPageComponent
+  LectureDetailsPageComponent,
+  NotesPageComponent
 ]
