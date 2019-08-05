@@ -17,7 +17,11 @@ import {MatInputModule} from '@angular/material/input';
 
 import {MatFormFieldModule} from '@angular/material/form-field';
 import {MatSelectModule} from '@angular/material/select';
-import { NgMatSearchBarModule } from 'ng-mat-search-bar';
+// import { NgMatSearchBarModule } from 'ng-mat-search-bar';
+import { CourseDashboardComponent } from './course-dashboard/course-dashboard.component';
+import {ReactiveFormsModule,FormsModule} from '@angular/forms';
+import { UploadNotesComponent } from './upload-notes/upload-notes.component';
+import { AllCoursePageComponent } from './all-course-page/all-course-page.component';
 
 
 
@@ -30,11 +34,17 @@ import { NgMatSearchBarModule } from 'ng-mat-search-bar';
     HeaderComponent,
     
     FooterComponent,
-    routingComponents
+    routingComponents,
+    CourseDashboardComponent,
+    UploadNotesComponent,
+    AllCoursePageComponent
     
     
   ],
   imports: [
+    BrowserModule /* or CommonModule */, 
+    ReactiveFormsModule,
+    FormsModule,
     BrowserAnimationsModule,
     MDBBootstrapModule.forRoot(),
     LayoutModule,
@@ -47,7 +57,7 @@ import { NgMatSearchBarModule } from 'ng-mat-search-bar';
     AppRoutingModule,
     MatFormFieldModule,
     MatSelectModule,
-    NgMatSearchBarModule,
+    // NgMatSearchBarModule,
     MatInputModule
   ],
   
