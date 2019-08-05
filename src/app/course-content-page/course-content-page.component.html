@@ -1,57 +1,18 @@
-<style>
-    h2 a:hover {
-        color: #2bbbad !important;
-    }
 
-    .middle {
-        transition: .5s ease;
-        opacity: 0;
-        position: absolute;
-        top: 30%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        -ms-transform: translate(-50%, -50%);
-        text-align: center;
-    }
 
-    .image {
-        opacity: 1;
-        display: block;
-        width: 100%;
-        height: auto;
-        transition: .5s ease;
-        backface-visibility: hidden;
-    }
-
-    .img_container:hover .image {
-        opacity: 0.3;
-    }
-
-    .img_container:hover .middle {
-        opacity: 1;
-    }
-
-    .text {
-        background-color: #2bbbad;
-        color: white;
-        font-size: 16px;
-        padding: 16px 32px;
-    }
-</style>
 
 <br><br><br><br><br>
 
 <div class="text-center">
-    <h1>All Courses</h1>
+    <h1>Course Content</h1>
 </div>
 <br>
-
 <div id="content" style="border: black">
     <section class="text-center" id="about">
         <div class="row">
             <div class="col-md-4">
                 <div style="text-align: left; padding-left: 115px">
-                    <button mdbBtn type="button" color="default" mdbWavesEffect>Add New Course</button>
+                    <button mdbBtn type="button" color="default" mdbWavesEffect>Add Course Content</button>
                 </div>
             </div>
             <div class="col-md-4" style="padding-left: 600px">
@@ -71,85 +32,202 @@
 
             <div class="row">
                 <div class="col-md-4 img_container" style="width: auto">
-                    <img class="image" style="width: 350px; height: 200px" src="assets/img/course.jpg"
-                        alt="team member" />
-                    <div class="middle">
-                        <div class="text">View</div>
-                    </div>
+                    
                     <div style="border-style: solid; border-width:thin; border-color: black;">
                         <!-- <div><i class="fa fa-book fa-3x cyan-text"></i></div> -->
                         <h2
-                            style="margin-bottom: 0; padding-bottom:0; height:auto; font-size: 16px; font-weight: 700; line-height: 25px; margin: 11px 0 22px; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; text-overflow: ellipsis; text-transform: none;">
-                            <a style="color: black;" href="#" rel="bookmark">Database Systems (Pr) - 2019</a>
+                            style="margin-bottom: 0; padding-bottom:0; height:auto; font-size: 16px; font-weight: 700; line-height: 25px; margin: 11px 180px 0px 22px; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; text-overflow: ellipsis; text-transform: none;">
+                            <a style="color: black;" href="#" rel="bookmark">Book Name:</a>
                         </h2>
-                        <div style="padding-left: 10%">
-                            <hr width="80%">
-                        </div>
-                        <div class="row">
-                            &nbsp; &nbsp;
-                            <div class="col-md-4">
-                                <i class="fa fa-group"></i>&nbsp; 100 &nbsp;
-                                <i class="fa fa-comment"></i>&nbsp; 4 &nbsp;
-                            </div>
-                            <div class="col-md-4" style="margin-left:auto; margin-right:auto;">Not Enrolled</div>
-                        </div>
-                    </div>
-                </div>
-
-
-                <div class="col-md-4 img_container" style="width: auto">
-                    <img class="image" style="width: 350px; height: 200px" src="assets/img/course.jpg"
-                        alt="team member" />
-                    <div class="middle">
-                        <div class="text">View</div>
-                    </div>
-                    <div style="border-style: solid; border-width:thin; border-color: black;">
-                        <!-- <div><i class="fa fa-book fa-3x cyan-text"></i></div> -->
                         <h2
-                            style="margin-bottom: 0; padding-bottom:0; height:auto; font-size: 16px; font-weight: 700; line-height: 25px; margin: 11px 0 22px; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; text-overflow: ellipsis; text-transform: none;">
-                            <a style="color: black;" href="#" rel="bookmark">Database Systems (Th) - 2019</a>
-                        </h2>
+                        style="margin-bottom: 0; padding-bottom:0; height:auto; font-size: 16px; font-weight: 700; line-height: 25px; margin: 11px 170px 0px 22px; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; text-overflow: ellipsis; text-transform: none;">
+                        <a style="color: black;" href="#" rel="bookmark">Suggested By:</a>
+                       
+                    </h2>
+                   <br>
                         <div style="padding-left: 50px">
                             <hr width="80%">
                         </div>
                         <div class="row">
-                            &nbsp; &nbsp;
                             <div class="col-md-4">
-                                <i class="fa fa-group"></i>&nbsp; 100 &nbsp;
-                                <i class="fa fa-comment"></i>&nbsp; 4 &nbsp;
+                                <div style="text-align: left; padding-left: 40%">
+                                    <button mdbBtn type="button" color="default" mdbWavesEffect>View</button>
+                                </div>
                             </div>
-                            <div class="col-md-4" style="margin-left:auto; margin-right:0;">Not Enrolled</div>
+                            <div class="col-md-4">
+                                <div style="text-align: left; padding-left: 40%">
+                                    <button mdbBtn type="button" color="default" mdbWavesEffect>Download</button>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
 
-
+               
                 <div class="col-md-4 img_container" style="width: auto">
-                    <img class="image" style="width: 350px; height: 200px" src="assets/img/course.jpg"
-                        alt="team member" />
-                    <div class="middle">
-                        <div class="text">View</div>
-                    </div>
+                    
                     <div style="border-style: solid; border-width:thin; border-color: black;">
                         <!-- <div><i class="fa fa-book fa-3x cyan-text"></i></div> -->
                         <h2
-                            style="margin-bottom: 0; padding-bottom:0; height:auto; font-size: 16px; font-weight: 700; line-height: 25px; margin: 11px 0 22px; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; text-overflow: ellipsis; text-transform: none;">
-                            <a style="color: black;" href="#" rel="bookmark">Introduction To Computing - 2019</a>
+                            style="margin-bottom: 0; padding-bottom:0; height:auto; font-size: 16px; font-weight: 700; line-height: 25px; margin: 11px 180px 0px 22px; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; text-overflow: ellipsis; text-transform: none;">
+                            <a style="color: black;" href="#" rel="bookmark">Book Name:</a>
                         </h2>
+                        <h2
+                        style="margin-bottom: 0; padding-bottom:0; height:auto; font-size: 16px; font-weight: 700; line-height: 25px; margin: 11px 170px 0px 22px; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; text-overflow: ellipsis; text-transform: none;">
+                        <a style="color: black;" href="#" rel="bookmark">Suggested By:</a>
+                       
+                    </h2>
+                   <br>
                         <div style="padding-left: 50px">
                             <hr width="80%">
                         </div>
                         <div class="row">
-                            &nbsp; &nbsp;
                             <div class="col-md-4">
-                                <i class="fa fa-group"></i>&nbsp; 100 &nbsp;
-                                <i class="fa fa-comment"></i>&nbsp; 4 &nbsp;
+                                <div style="text-align: left; padding-left: 40%">
+                                    <button mdbBtn type="button" color="default" mdbWavesEffect>View</button>
+                                </div>
                             </div>
-                            <div class="col-md-4" style="margin-left:auto; margin-right:0;">Not Enrolled</div>
+                            <div class="col-md-4">
+                                <div style="text-align: left; padding-left: 40%">
+                                    <button mdbBtn type="button" color="default" mdbWavesEffect>Download</button>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
+                <div class="col-md-4 img_container" style="width: auto">
+                    
+                    <div style="border-style: solid; border-width:thin; border-color: black;">
+                        <!-- <div><i class="fa fa-book fa-3x cyan-text"></i></div> -->
+                        <h2
+                            style="margin-bottom: 0; padding-bottom:0; height:auto; font-size: 16px; font-weight: 700; line-height: 25px; margin: 11px 180px 0px 22px; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; text-overflow: ellipsis; text-transform: none;">
+                            <a style="color: black;" href="#" rel="bookmark">Book Name:</a>
+                        </h2>
+                        <h2
+                        style="margin-bottom: 0; padding-bottom:0; height:auto; font-size: 16px; font-weight: 700; line-height: 25px; margin: 11px 170px 0px 22px; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; text-overflow: ellipsis; text-transform: none;">
+                        <a style="color: black;" href="#" rel="bookmark">Suggested By:</a>
+                       
+                    </h2>
+                   <br>
+                        <div style="padding-left: 50px">
+                            <hr width="80%">
+                        </div>
+                        <div class="row">
+                            <div class="col-md-4">
+                                <div style="text-align: left; padding-left: 40%">
+                                    <button mdbBtn type="button" color="default" mdbWavesEffect>View</button>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div style="text-align: left; padding-left: 40%">
+                                    <button mdbBtn type="button" color="default" mdbWavesEffect>Download</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                </div>
+                
+            <br>
+           
+            <div class="row">
+                <div class="col-md-4 img_container" style="width: auto">
+                    
+                    <div style="border-style: solid; border-width:thin; border-color: black;">
+                        <!-- <div><i class="fa fa-book fa-3x cyan-text"></i></div> -->
+                        <h2
+                            style="margin-bottom: 0; padding-bottom:0; height:auto; font-size: 16px; font-weight: 700; line-height: 25px; margin: 11px 180px 0px 22px; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; text-overflow: ellipsis; text-transform: none;">
+                            <a style="color: black;" href="#" rel="bookmark">Book Name:</a>
+                        </h2>
+                        <h2
+                        style="margin-bottom: 0; padding-bottom:0; height:auto; font-size: 16px; font-weight: 700; line-height: 25px; margin: 11px 170px 0px 22px; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; text-overflow: ellipsis; text-transform: none;">
+                        <a style="color: black;" href="#" rel="bookmark">Suggested By:</a>
+                       
+                    </h2>
+                   <br>
+                        <div style="padding-left: 50px">
+                            <hr width="80%">
+                        </div>
+                        <div class="row">
+                            <div class="col-md-4">
+                                <div style="text-align: left; padding-left: 40%">
+                                    <button mdbBtn type="button" color="default" mdbWavesEffect>View</button>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div style="text-align: left; padding-left: 40%">
+                                    <button mdbBtn type="button" color="default" mdbWavesEffect>Download</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+               
+                <div class="col-md-4 img_container" style="width: auto">
+                    
+                    <div style="border-style: solid; border-width:thin; border-color: black;">
+                        <!-- <div><i class="fa fa-book fa-3x cyan-text"></i></div> -->
+                        <h2
+                            style="margin-bottom: 0; padding-bottom:0; height:auto; font-size: 16px; font-weight: 700; line-height: 25px; margin: 11px 180px 0px 22px; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; text-overflow: ellipsis; text-transform: none;">
+                            <a style="color: black;" href="#" rel="bookmark">Book Name:</a>
+                        </h2>
+                        <h2
+                        style="margin-bottom: 0; padding-bottom:0; height:auto; font-size: 16px; font-weight: 700; line-height: 25px; margin: 11px 170px 0px 22px; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; text-overflow: ellipsis; text-transform: none;">
+                        <a style="color: black;" href="#" rel="bookmark">Suggested By:</a>
+                       
+                    </h2>
+                   <br>
+                        <div style="padding-left: 50px">
+                            <hr width="80%">
+                        </div>
+                        <div class="row">
+                            <div class="col-md-4">
+                                <div style="text-align: left; padding-left: 40%">
+                                    <button mdbBtn type="button" color="default" mdbWavesEffect>View</button>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div style="text-align: left; padding-left: 40%">
+                                    <button mdbBtn type="button" color="default" mdbWavesEffect>Download</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 img_container" style="width: auto">
+                    
+                    <div style="border-style: solid; border-width:thin; border-color: black;">
+                        <!-- <div><i class="fa fa-book fa-3x cyan-text"></i></div> -->
+                        <h2
+                            style="margin-bottom: 0; padding-bottom:0; height:auto; font-size: 16px; font-weight: 700; line-height: 25px; margin: 11px 180px 0px 22px; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; text-overflow: ellipsis; text-transform: none;">
+                            <a style="color: black;" href="#" rel="bookmark">Book Name:</a>
+                        </h2>
+                        <h2
+                        style="margin-bottom: 0; padding-bottom:0; height:auto; font-size: 16px; font-weight: 700; line-height: 25px; margin: 11px 170px 0px 22px; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; text-overflow: ellipsis; text-transform: none;">
+                        <a style="color: black;" href="#" rel="bookmark">Suggested By:</a>
+                       
+                    </h2>
+                   <br>
+                        <div style="padding-left: 50px">
+                            <hr width="80%">
+                        </div>
+                        <div class="row">
+                            <div class="col-md-4">
+                                <div style="text-align: left; padding-left: 40%">
+                                    <button mdbBtn type="button" color="default" mdbWavesEffect>View</button>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div style="text-align: left; padding-left: 40%">
+                                    <button mdbBtn type="button" color="default" mdbWavesEffect>Download</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+               </div>
             </div>
-        </div>
+                
     </section>
 </div>
