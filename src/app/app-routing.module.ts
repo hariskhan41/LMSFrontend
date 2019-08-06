@@ -15,6 +15,7 @@ import { AllCoursePageComponent } from './all-course-page/all-course-page.compon
 import { UploadNotesComponent } from './upload-notes/upload-notes.component';
 import { CourseDashboardComponent } from './course-dashboard/course-dashboard.component';
 import { StudentsDetailsComponent } from './students-details/students-details.component';
+import { AddTeacherPageComponent } from './add-teacher-page/add-teacher-page.component';
 
 const routes: Routes = [
   { path: '', component:MainPageComponent },
@@ -31,7 +32,8 @@ const routes: Routes = [
   { path: 'AllCourses', component: AllCoursePageComponent },
   { path: 'AddNotes', component: UploadNotesComponent },
   { path: 'CourseDetails', component: CourseDashboardComponent },
-  { path: 'StudentsDetails', component:StudentsDetailsComponent }
+  { path: 'StudentsDetails', component: StudentsDetailsComponent },
+  { path: 'AddTeacher', component: AddTeacherPageComponent }
   
 ];
 
@@ -55,5 +57,6 @@ export const routingComponents = [
   AllCoursePageComponent,
   UploadNotesComponent,
   CourseDashboardComponent,
-  StudentsDetailsComponent
+  StudentsDetailsComponent,
+  AddTeacherPageComponent
 ]

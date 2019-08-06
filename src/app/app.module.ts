@@ -25,6 +25,7 @@ import { LectureCommandsComponent } from './lecture-commands/lecture-commands.co
 
 
 
+
 @NgModule({
   declarations: [
     AppComponent,
