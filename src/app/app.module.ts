@@ -14,6 +14,10 @@ import {MatIconModule} from '@angular/material/icon';
 import {MatListModule} from '@angular/material/list';
 import {FooterComponent } from './footer/footer.component';
 import {MatInputModule} from '@angular/material/input';
+import {MatDatepickerModule} from '@angular/material/datepicker';
+import {MatCardModule} from '@angular/material/card';
+import {MatTabsModule} from '@angular/material/tabs';
+import { MatMomentDateModule } from "@angular/material-moment-adapter";
 
 import {MatFormFieldModule} from '@angular/material/form-field';
 import {MatSelectModule} from '@angular/material/select';
@@ -32,11 +36,6 @@ import { LectureCommandsComponent } from './lecture-commands/lecture-commands.co
     HeaderComponent,    
     FooterComponent,
     routingComponents,
-    CourseDashboardComponent,
-    UploadNotesComponent,
-    AllCoursePageComponent,
-    StudentsDetailsComponent,
-    AddClassComponent,
     LectureCommandsComponent
     
     
@@ -58,10 +57,16 @@ import { LectureCommandsComponent } from './lecture-commands/lecture-commands.co
     MatFormFieldModule,
     MatSelectModule,
     // NgMatSearchBarModule,
-    MatInputModule
+    MatInputModule,
+    MatDatepickerModule,
+    MatCardModule,
+    MatMomentDateModule,
+    MatTabsModule
   ],
   
-  providers: [],
+  providers: [
+    MatDatepickerModule
+  ],
   schemas:[
     CUSTOM_ELEMENTS_SCHEMA
   ],
