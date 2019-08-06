@@ -5,9 +5,8 @@
      });
   </script>
  
-  <body class="hm-gradient center ">
+  <body class="hm-gradient center">
    <main>
-      
       <!--MDB Forms-->
       <div class="container">
           <!-- Grid row -->
@@ -22,19 +21,20 @@
                             <div class="col-md-6">
                               <mdb-select [options]="optionsSelect" placeholder="Choose your option"></mdb-select>
                             </div> -->
-                            <div class="row">
-                              <div class="col-md-6">
-                                <mdb-select [options]="optionsSelect" placeholder="Choose your option"></mdb-select>
-                              </div>
-                            </div>
                             
-                          
                           <div class="md-form">
-                              <i class="fas fa-chalkboard-teacher  prefix grey-text"></i>
-                              <input type="text" id="defaultForm-email" class="form-control">
-                              <label for="defaultForm-email">Class Name</label>
-                          </div>
-                          <div class="d-flex justify-content-around">
+                            <i class="fas fa-chalkboard-teacher  prefix grey-text"></i>
+                            <mat-form-field style="padding-left:50px">
+                              <mat-label>Select Class</mat-label>
+                              <mat-select [(value)]="selected">
+                                  <mat-option>None</mat-option>
+                                  <mat-option value="option1">Option 1</mat-option>
+                                  <mat-option value="option2">Option 2</mat-option>
+                                  <mat-option value="option3">Option 3</mat-option>
+                              </mat-select>
+                          </mat-form-field>
+                        </div>                          
+                        <div class="d-flex justify-content-around">
                             <div class="text-center">
                              <button mdbBtn type="button" color="default" mdbWavesEffect><i class="	fa fa-play"></i></button>
                           </div>

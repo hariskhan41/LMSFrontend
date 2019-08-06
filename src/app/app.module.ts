@@ -21,6 +21,8 @@ import {MatSelectModule} from '@angular/material/select';
 
 import {ReactiveFormsModule,FormsModule} from '@angular/forms';
 import { LectureCommandsComponent } from './lecture-commands/lecture-commands.component';
+import { GroupPermissionComponent } from './group-permission/group-permission.component';
+import { AddGroupComponent } from './add-group/add-group.component';
 
 
 
@@ -32,12 +34,15 @@ import { LectureCommandsComponent } from './lecture-commands/lecture-commands.co
     HeaderComponent,    
     FooterComponent,
     routingComponents,
-    CourseDashboardComponent,
-    UploadNotesComponent,
-    AllCoursePageComponent,
-    StudentsDetailsComponent,
-    AddClassComponent,
-    LectureCommandsComponent
+    // CourseDashboardComponent,
+    // UploadNotesComponent,
+    // AllCoursePageComponent,
+    // StudentsDetailsComponent,
+    // AddClassComponent,
+    LectureCommandsComponent,
+    GroupPermissionComponent,
+    AddGroupComponent
+  
     
     
   ],
