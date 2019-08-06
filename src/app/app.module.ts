@@ -24,7 +24,7 @@ import {MatSelectModule} from '@angular/material/select';
 // import { NgMatSearchBarModule } from 'ng-mat-search-bar';
 
 import {ReactiveFormsModule,FormsModule} from '@angular/forms';
-import { LectureCommandsComponent } from './lecture-commands/lecture-commands.component';
+
 
 
 
@@ -35,8 +35,7 @@ import { LectureCommandsComponent } from './lecture-commands/lecture-commands.co
     AppComponent,
     HeaderComponent,    
     FooterComponent,
-    routingComponents,
-    LectureCommandsComponent
+    routingComponents
     
     
   ],
