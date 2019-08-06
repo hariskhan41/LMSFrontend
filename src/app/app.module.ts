@@ -18,12 +18,8 @@ import {MatInputModule} from '@angular/material/input';
 import {MatFormFieldModule} from '@angular/material/form-field';
 import {MatSelectModule} from '@angular/material/select';
 // import { NgMatSearchBarModule } from 'ng-mat-search-bar';
-import { CourseDashboardComponent } from './course-dashboard/course-dashboard.component';
+
 import {ReactiveFormsModule,FormsModule} from '@angular/forms';
-import { UploadNotesComponent } from './upload-notes/upload-notes.component';
-import { AllCoursePageComponent } from './all-course-page/all-course-page.component';
-import { StudentsDetailsComponent } from './students-details/students-details.component';
-import { AddClassComponent } from './add-class/add-class.component';
 import { LectureCommandsComponent } from './lecture-commands/lecture-commands.component';
 
 
@@ -32,8 +28,7 @@ import { LectureCommandsComponent } from './lecture-commands/lecture-commands.co
 @NgModule({
   declarations: [
     AppComponent,
-    HeaderComponent,
-    
+    HeaderComponent,    
     FooterComponent,
     routingComponents,
     CourseDashboardComponent,
