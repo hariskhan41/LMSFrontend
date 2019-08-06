@@ -1,8 +1,7 @@
-    
 <body class="hm-gradient center ">
 
     <main>
-        
+
         <!--MDB Forms-->
         <div class="container">
             <!-- Grid row -->
@@ -12,28 +11,28 @@
                     <div class="card">
                         <div class="card-body">
                             <h3 class="text-center default-text py-3"><i class="fa fa-lock"></i> Sign Up</h3>
-                        <div class="form-row">
-                            <div class="md-form col">
-                                <input type="text" id="defaultForm-email" class="form-control">
-                                <label for="defaultForm-email">First Name</label>
+                            <div class="form-row">
+                                <div class="md-form col">
+                                    <input type="text" id="defaultForm-email" class="form-control">
+                                    <label for="defaultForm-email">First Name</label>
+                                </div>
+                                <div class="md-form col">
+                                    <input type="text" id="defaultForm-pass" class="form-control">
+                                    <label for="defaultForm-pass">Last Name</label>
+                                </div>
                             </div>
-                            <div class="md-form col">
-                                <input type="text" id="defaultForm-pass" class="form-control">
-                                <label for="defaultForm-pass">Last Name</label>
+                            <div class="form-row">
+                                <div class="md-form col">
+                                    <input type="text" id="defaultForm-email" class="form-control">
+                                    <label for="defaultForm-email">CNIC</label>
+                                </div>
+                                <div class="md-form col">
+                                    <input type="text" id="defaultForm-pass" class="form-control">
+                                    <label for="defaultForm-pass">Email</label>
+                                </div>
+
                             </div>
-                        </div>
-                        <div class="form-row">
-                            <div class="md-form col">
-                                <input type="text" id="defaultForm-email" class="form-control">
-                                <label for="defaultForm-email">CNIC</label>
-                            </div>
-                            <div class="md-form col">
-                                <input type="text" id="defaultForm-pass" class="form-control">
-                                <label for="defaultForm-pass">Email</label>
-                            </div>
-                            
-                        </div>
-                        <!-- <div class="row">
+                            <!-- <div class="row">
                                 <select class="mdb-select md-form col">
                                         <option value="" disabled selected>Choose your option</option>
                                         <option value="1">Option 1</option>
@@ -48,19 +47,35 @@
                                       </select>
                                       
                         </div> -->
-                        <div class="form-row">
-                            <div class="md-form col">
-                                <input type="password" id="defaultForm-email" class="form-control">
-                                <label for="defaultForm-email">Password</label>
-                            </div>
-                            <div class="md-form col">
-                                <input type="password" id="defaultForm-pass" class="form-control">
-                                <label for="defaultForm-pass">Confirm Password</label>
-                            </div>
-                            
-                        </div>
+                            <div class="form-row">
+                                <div class="md-form col">
+                                    <input type="password" id="defaultForm-email" class="form-control">
+                                    <label for="defaultForm-email">Password</label>
+                                </div>
+                                <div class="md-form col">
+                                    <input type="password" id="defaultForm-pass" class="form-control">
+                                    <label for="defaultForm-pass">Confirm Password</label>
+                                </div>
 
-                        
+                            </div>
+
+                            <div class="form-row">
+                                <div class="md-form col">
+                                    
+                                    <mat-form-field>
+                                        <mat-label>Select Institute</mat-label>
+                                        <mat-select [(value)]="selected">
+                                            <mat-option>None</mat-option>
+                                            <mat-option value="option1">Option 1</mat-option>
+                                            <mat-option value="option2">Option 2</mat-option>
+                                            <mat-option value="option3">Option 3</mat-option>
+                                        </mat-select>
+                                    </mat-form-field>
+                                    
+                                </div>
+                            </div>
+
+
                             <div class="text-center">
                                 <button mdbBtn type="button" color="default" mdbWavesEffect>Sign Up</button>
                             </div>
@@ -71,9 +86,13 @@
             </div>
         </div>
     </main>
-    <script>
-    // Material Select Initialization
-$(document).ready(function() {
-$('.mdb-select').materialSelect();
-});</script>
 </body>
+
+<script>
+    // Material Select Initialization
+    $(document).ready(function () {
+        $('.mdb-select').materialSelect();
+        alert('ready');
+    });
+
+</script>
