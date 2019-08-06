@@ -1,0 +1,124 @@
+
+<br><br><br>
+<h1 style="text-align: center">Permission Management</h1>
+<br>
+<div class="container">
+    <div class="row">
+        <div class="col-md-3">
+            <button mdbBtn type="button" color="default" mdbWavesEffect><b>Add Group</b></button>
+        </div>
+    </div>
+    <table class="table center">
+        
+        <tbody>
+            <tr>
+                <th></th>
+                <th>Group</th>
+                <th>Users</th>
+                <th>Select User</th>
+                <th>Permissions</th>
+            </tr>
+            <tr>
+                    <td rowspan="4" ><i class="fa fa-users fa-3x" aria-hidden="true"></i></td>
+                    <td rowspan="4" style="padding-top: 3%">Admin</td>
+                    <td rowspan="4" style="padding-top: 3%"><!-- Material unchecked -->
+                        <div class="custom-control custom-checkbox">
+                            <input type="checkbox" class="custom-control-input" id="defaultUnchecked">
+                            <label class="custom-control-label" for="defaultUnchecked">All Users</label>
+                        </div></td>
+                    <td rowspan="4"><mat-form-field>
+                        <mat-label>Select User</mat-label>
+                        <mat-select [(value)]="selected">
+                            <mat-option>None</mat-option>
+                            <mat-option value="option1">Option 1</mat-option>
+                            <mat-option value="option2">Option 2</mat-option>
+                            <mat-option value="option3">Option 3</mat-option>
+                        </mat-select>
+                    </mat-form-field></td>
+                    <td ><div class="custom-control custom-checkbox">
+                        <input type="checkbox" class="custom-control-input" id="Unchecked">
+                        <label class="custom-control-label" for="Unchecked">Permission1</label>
+                    </div></td>  
+            </tr>
+            <tr>
+                <td><div class="custom-control custom-checkbox">
+                    <input type="checkbox" class="custom-control-input" id="Unhecked">
+                    <label class="custom-control-label" for="Unhecked">Permission2</label>
+                </div></td>
+            </tr>
+            <tr>
+                <td><div class="custom-control custom-checkbox">
+                    <input type="checkbox" class="custom-control-input" id="Uchecked">
+                    <label class="custom-control-label" for="Uchecked">Permission3</label>
+                </div></td>
+            </tr>
+            <tr>
+                <td><button type="button" class="btn btn-outline-default btn-md waves-effect" data-toggle="modal" data-target="#exampleModalCenter"><b>Add</b></button></td>
+            </tr>
+            <tr>
+                <td rowspan="3" ><i class="fa fa-users fa-3x" aria-hidden="true"></i></td>
+                <td rowspan="3" style="padding-top: 3%">Teacher</td>
+                <td rowspan="3"style="padding-top: 3%"><!-- Material unchecked -->
+                    <div class="custom-control custom-checkbox">
+                        <input type="checkbox" class="custom-control-input" id="nchecked">
+                        <label class="custom-control-label" for="nchecked">All Users</label>
+                    </div></td>
+                <td rowspan="3"><mat-form-field>
+                    <mat-label>Select User</mat-label>
+                    <mat-select [(value)]="selected">
+                        <mat-option>None</mat-option>
+                        <mat-option value="option1">Option 1</mat-option>
+                        <mat-option value="option2">Option 2</mat-option>
+                        <mat-option value="option3">Option 3</mat-option>
+                    </mat-select>
+                </mat-form-field></td>
+                <td ><div class="custom-control custom-checkbox">
+                    <input type="checkbox" class="custom-control-input" id="Unchecked1">
+                    <label class="custom-control-label" for="Unchecked1">Permission1</label>
+                </div></td>  
+        </tr>
+        <tr>
+            <td><div class="custom-control custom-checkbox">
+                <input type="checkbox" class="custom-control-input" id="checked">
+                <label class="custom-control-label" for="checked">Permission2</label>
+            </div></td>
+        </tr>
+        <tr>
+            <td><button type="button" class="btn btn-outline-default btn-md waves-effect" data-toggle="modal" data-target="#exampleModalCenter"><b>Add</b></button></td>
+        </tr>
+            
+           
+        </tbody>
+    </table>
+</div>
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
+  aria-hidden="true">
+
+  <!-- Add .modal-dialog-centered to .modal-dialog to vertically center the modal -->
+  <div class="modal-dialog modal-dialog-centered" role="document">
+
+
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLongTitle">Add Permission</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+           <div class="md-form">
+                <i class="fa fa-lock prefix grey-text" aria-hidden="true"></i>
+            <input type="text" id="defaultForm-email" class="form-control">
+            <label for="defaultForm-email">Permission</label>
+        </div>
+      </div>
+      <div class="modal-footer">
+       
+        <button type="button" class="btn btn-default btn-md waves-effect" data-dismiss="modal"><b>Close</b></button>
+        <button type="button" class="btn btn-default btn-md waves-effect"><b>Save</b></button>
+      </div>
+    </div>
+  </div>
+</div>
