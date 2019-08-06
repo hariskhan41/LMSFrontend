@@ -1,0 +1,32 @@
+.center
+{
+   
+  margin-top:10%;
+ margin-left: 30%;
+}
+.dropdown-primary li.disabled.active{
+  background-color: transparent !important;
+}
+mdb-select > div > div.single > div.value, mdb-select > div > div.single > div.placeholder {
+
+  color: green;
+
+}
+
+mdb-select + label {
+
+color: green;
+
+}
+
+mdb-select mdb-select-dropdown .dropdown-content li > a, mdb-select mdb-select-dropdown .dropdown-content li > span {
+
+  color: green;
+
+}
+
+.dropdown-content li:hover, .dropdown-content li.active {
+
+  background-color: cyan;
+
+}

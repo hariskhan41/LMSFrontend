@@ -24,6 +24,7 @@ import { UploadNotesComponent } from './upload-notes/upload-notes.component';
 import { AllCoursePageComponent } from './all-course-page/all-course-page.component';
 import { StudentsDetailsComponent } from './students-details/students-details.component';
 import { AddClassComponent } from './add-class/add-class.component';
+import { LectureCommandsComponent } from './lecture-commands/lecture-commands.component';
 
 
 
@@ -39,7 +40,8 @@ import { AddClassComponent } from './add-class/add-class.component';
     UploadNotesComponent,
     AllCoursePageComponent,
     StudentsDetailsComponent,
-    AddClassComponent
+    AddClassComponent,
+    LectureCommandsComponent
     
     
   ],
