@@ -10,18 +10,29 @@ import { NotesPageComponent } from './notes-page/notes-page.component';
 import { CourseAssignmentPageComponent } from './course-assignment-page/course-assignment-page.component';
 import { UploadAssignmentComponent } from './upload-assignment/upload-assignment.component';
 import { AllClassesPageComponent } from './all-classes-page/all-classes-page.component';
+import { AddClassComponent } from './add-class/add-class.component';
+import { AllCoursePageComponent } from './all-course-page/all-course-page.component';
+import { UploadNotesComponent } from './upload-notes/upload-notes.component';
+import { CourseDashboardComponent } from './course-dashboard/course-dashboard.component';
+import { StudentsDetailsComponent } from './students-details/students-details.component';
 
 const routes: Routes = [
   { path: '', component:MainPageComponent },
   { path: 'Registration', component:RegistrationFormComponent },
   { path: 'SignIn', component: SignUpComponent },
-  { path: 'Courses', component: CourseContentPageComponent },
+  { path: 'CourseContent', component: CourseContentPageComponent },
   { path: 'AddNewCourse', component: AddCoursesPageComponent },
   { path: 'LectureDetails', component: LectureDetailsPageComponent },
   { path: 'Notes', component: NotesPageComponent },
   { path: 'Assignments', component: CourseAssignmentPageComponent },
   { path: 'AddAssignment', component: UploadAssignmentComponent },
-  { path: 'Classes', component: AllClassesPageComponent }
+  { path: 'Classes', component: AllClassesPageComponent },
+  { path: 'AddClass', component: AddClassComponent },
+  { path: 'AllCourses', component: AllCoursePageComponent },
+  { path: 'AddNotes', component: UploadNotesComponent },
+  { path: 'CourseDetails', component: CourseDashboardComponent },
+  { path: 'StudentsDetails', component:StudentsDetailsComponent }
+  
 ];
 
 @NgModule({
@@ -39,5 +50,10 @@ export const routingComponents = [
   NotesPageComponent,
   CourseAssignmentPageComponent,
   UploadAssignmentComponent,
-  AllClassesPageComponent
+  AllClassesPageComponent,
+  AddClassComponent,
+  AllCoursePageComponent,
+  UploadNotesComponent,
+  CourseDashboardComponent,
+  StudentsDetailsComponent
 ]
