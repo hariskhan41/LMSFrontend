@@ -14,15 +14,17 @@ import {MatIconModule} from '@angular/material/icon';
 import {MatListModule} from '@angular/material/list';
 import {FooterComponent } from './footer/footer.component';
 import {MatInputModule} from '@angular/material/input';
+import {MatCardModule} from '@angular/material/card';
+import {MatTabsModule} from '@angular/material/tabs';
+import {MatMomentDateModule} from '@angular/material-moment-adapter';
+import {MatDatepickerModule} from '@angular/material/datepicker';
 
 import {MatFormFieldModule} from '@angular/material/form-field';
 import {MatSelectModule} from '@angular/material/select';
 // import { NgMatSearchBarModule } from 'ng-mat-search-bar';
 
 import {ReactiveFormsModule,FormsModule} from '@angular/forms';
-import { LectureCommandsComponent } from './lecture-commands/lecture-commands.component';
-import { GroupPermissionComponent } from './group-permission/group-permission.component';
-import { AddGroupComponent } from './add-group/add-group.component';
+
 
 
 
@@ -38,10 +40,7 @@ import { AddGroupComponent } from './add-group/add-group.component';
     // UploadNotesComponent,
     // AllCoursePageComponent,
     // StudentsDetailsComponent,
-    // AddClassComponent,
-    LectureCommandsComponent,
-    GroupPermissionComponent,
-    AddGroupComponent
+    // AddClassComponent
   
     
     
@@ -63,7 +62,11 @@ import { AddGroupComponent } from './add-group/add-group.component';
     MatFormFieldModule,
     MatSelectModule,
     // NgMatSearchBarModule,
-    MatInputModule
+    MatInputModule,
+    MatCardModule,
+    MatDatepickerModule,
+    MatTabsModule,
+    MatMomentDateModule
   ],
   
   providers: [],
