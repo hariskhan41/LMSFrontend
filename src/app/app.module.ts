@@ -24,19 +24,12 @@ import {ReactiveFormsModule,FormsModule} from '@angular/forms';
 
 
 
-
-
-
-
 @NgModule({
   declarations: [
     AppComponent,
-    HeaderComponent,
-    
+    HeaderComponent,    
     FooterComponent,
     routingComponents
-    
-    
   ],
   imports: [
     BrowserModule /* or CommonModule */, 
