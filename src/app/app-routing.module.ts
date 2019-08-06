@@ -17,6 +17,7 @@ import { CourseDashboardComponent } from './course-dashboard/course-dashboard.co
 import { StudentsDetailsComponent } from './students-details/students-details.component';
 import { AddTeacherPageComponent } from './add-teacher-page/add-teacher-page.component';
 import { LectureCommandsComponent } from './lecture-commands/lecture-commands.component';
+import { EditClassPageComponent } from './edit-class-page/edit-class-page.component';
 
 const routes: Routes = [
   { path: '', component:MainPageComponent },
@@ -35,7 +36,8 @@ const routes: Routes = [
   { path: 'CourseDetails', component: CourseDashboardComponent },
   { path: 'StudentsDetails', component: StudentsDetailsComponent },
   { path: 'AddTeacher', component: AddTeacherPageComponent },
-  { path: 'LectureCommands', component: LectureCommandsComponent }
+  { path: 'LectureCommands', component: LectureCommandsComponent },
+  { path: 'Classes/Edit', component: EditClassPageComponent }
   
 ];
 
@@ -61,5 +63,6 @@ export const routingComponents = [
   CourseDashboardComponent,
   StudentsDetailsComponent,
   AddTeacherPageComponent,
-  LectureCommandsComponent
+  LectureCommandsComponent,
+  EditClassPageComponent
 ]
