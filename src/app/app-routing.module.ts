@@ -20,6 +20,7 @@ import { LectureCommandsComponent } from './lecture-commands/lecture-commands.co
 import { EditClassPageComponent } from './edit-class-page/edit-class-page.component';
 import { GroupPermissionComponent } from './group-permission/group-permission.component';
 import { AddGroupComponent } from './add-group/add-group.component';
+import { TeacherDetailsComponent } from './teacher-details/teacher-details.component';
 
 const routes: Routes = [
   { path: '', component:MainPageComponent },
@@ -41,7 +42,8 @@ const routes: Routes = [
   { path: 'LectureCommands', component: LectureCommandsComponent },
   { path: 'Classes/Edit', component: EditClassPageComponent },
   { path: 'GroupPermissions', component: GroupPermissionComponent },
-  { path: 'AddGroup', component:AddGroupComponent }
+  { path: 'AddGroup', component:AddGroupComponent },
+  { path: 'TeachersDetails', component: TeacherDetailsComponent }
   
 ];
 
@@ -70,5 +72,6 @@ export const routingComponents = [
   LectureCommandsComponent,
   EditClassPageComponent,
   GroupPermissionComponent,
-  AddGroupComponent
+  AddGroupComponent,
+  TeacherDetailsComponent
 ]
